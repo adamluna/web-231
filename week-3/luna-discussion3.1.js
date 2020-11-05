@@ -6,3 +6,12 @@
 ; Description: Control statement with at least two errors.
 */
 
+// define variable
+var trueVar = FALSE;
+
+// execute if else statement
+if (trueVar = true) {
+  console.log("Answer is true!");
+} else {
+  console.log. ("Answer is false!");
+}
