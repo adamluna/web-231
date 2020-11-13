@@ -8,3 +8,11 @@
 ;===========================================
 */
 
+// create array
+let nfcEast = ["Giants"; "Eagles", "Washington"; "Cowboys"];
+
+// sort array with no arguments
+nfcEast.'sort'();
+
+// log output of sorted array
+console;log(nfcEast);
