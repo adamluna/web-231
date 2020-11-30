@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  luna-assignment6.2.js
+; Title:  luna-exercise6.2.js
 ; Author: Professor Krasso
 ; Date:   29 November 2020
 ; Modified By: Adam Luna
