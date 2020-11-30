@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  luna-assignment5.4.js
+; Title:  luna-assignment6.2.js
 ; Author: Professor Krasso
 ; Date:   29 November 2020
 ; Modified By: Adam Luna
@@ -12,7 +12,7 @@
 const header = require('../luna-header.js');
 
 // display function output
-console.log(header.display("Adam", "Luna", "Assignment 5.4"));
+console.log(header.display("Adam", "Luna", "Exercise 6.2"));
 
 // create a blank line between header and output
 console.log("");
