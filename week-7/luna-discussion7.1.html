@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+============================================
+; Title:  luna-discussion7.1.html
+; Author: Adam Luna
+; Date:   03 December 2020
+; Description: Create a simple HTML page with embedded JavaScript and at least (2) JavaScript selector errors.
+;===========================================
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adam Luna - Discussion 7.1</title>
+  </head>
+  <style>
+    #text {
+      color: teal;
+    }
+  </style>
+  <body>
+    <!--Empty <h1> tag for document title.-->
+    <h1 id="title"></h1>
+
+    <h2>Click a button below and see what happens!</h2>
+    <p id="text">Now you see me, now you don't.</p>
+
+    <!--Hide the text in the <p> tag-->
+    <input
+      type="button"
+      value="Hide"
+      onclick="onclick.getElementById('text').style.visibility='hidden'"
+    />
+
+    <!--Show the text in the <p> tag-->
+    <input
+      type="button"
+      value="Show"
+      onclick="onclick.getElementById('text').style.visibility='visible'"
+    />
+
+    <!--Embedded JavaScript-->
+    <script>
+      // Display document title
+      doc.getElementById("title").innerHTML =
+        "This is the title of the HTML document: " + document.title;
+    </script>
+  </body>
+</html>
