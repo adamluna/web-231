@@ -1,0 +1,37 @@
+<!--
+============================================
+; Title:  luna-discussion8.1.html
+; Author: Adam Luna
+; Date:   10 December 2020
+; Description: Create a simple HTML page with at least (2) jQuery errors.
+;===========================================
+-->
+<!--Expected outcome: When you click the Hide #1 button, the first item on the ordered list should disappear. When you click the button again, it should reappear.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discussion 8.1</title>
+    <!--Adding jQuery library.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h2>Goodbye, Number One...</h2>
+    <ol>
+      <!--The first list item should disappear when you click the button.-->
+      <li id="one">Make me disappear!</li>
+      <li>I want to stick around, though.</li>
+      <li>Me, too.</li>
+    </ol>
+    <button>Hide #1</button>
+
+    <!--Add jQuery script to add button functionality.-->
+    <script>
+      $("button").click('function' () {
+        $(#one).toggle("button");
+      });
+    </script>
+  </body>
+</html>
