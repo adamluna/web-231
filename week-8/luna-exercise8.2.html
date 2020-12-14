@@ -1,0 +1,73 @@
+<!--
+============================================
+; Title: luna-exercise8.2.html
+; Author: Professor Krasso
+; Date: 13 Dec 2020
+; Modified by: Adam Luna
+; Description: Dynamic HTML
+;===========================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 8.2</title>
+    <!--Add google fonts link-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      #navbar {
+        background-color: teal; /*Give navbar a different background color*/
+        height: 50px;
+        margin-bottom: 20px; /*Have the unordered list appear 20px below the topbar*/
+      }
+
+      body {
+        font-family: "Roboto", sans-serif; /*Use Roboto: 300, 400, 500 for the font*/
+      }
+
+      ul {
+        margin: 0 auto; /*Center the unordered list (margin: 0 auto;)*/
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Create navbar using pure CSS-->
+    <nav id="navbar"></nav>
+
+    <div id="fruits"></div>
+
+    <script>
+      // Create a constructor object to create the array with two fields
+      function Fruit(id, type) {
+        this.id = id;
+        this.type = type;
+      }
+
+      // Create an array of fruits with two fields
+      let fruits = [
+        new Fruit(01, "apple"),
+        new Fruit(02, "banana"),
+        new Fruit(03, "orange"),
+        new Fruit(04, "pineapple"),
+      ];
+
+      // Add HTML title and begin unordered list
+      let output = "<h2>Fruits</h2><ul>";
+
+      // Iterate over the array of fruits
+      for (let x = 0; x < fruits.length; x++) {
+        output += `<li>${fruits[x].id}) ${fruits[x].type}</li>`;
+      }
+      // End unordered list
+      output += "</ul>";
+
+      // Output the results to the DOM in an unordered list
+      document.getElementById("fruits").innerHTML = output;
+    </script>
+  </body>
+</html>
